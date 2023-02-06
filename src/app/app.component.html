@@ -1,4 +1,4 @@
-<app-navbar *ngIf="authService.isLoggedIn || showSidebar === true"></app-navbar>
+<app-navbar *ngIf="authService.isLoggedIn && showSidebar === true"></app-navbar>
 <div class=" container-fluid">
   <div class="row">
     <ng-container *ngIf="authService.isLoggedIn">
